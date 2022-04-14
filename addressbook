@@ -116,3 +116,18 @@ mysql> select * from Addressbook;
 +-----------+-----------+----------+-----------+---------------+----------+-------------+-----------------------+
 4 rows in set (0.01 sec)
 --------------------------------------------------------------------------------------------------------
+UC5 -deleting the contact by their lastname
+
+mysql> delete from Addressbook where lastname='aishwarya';
+Query OK, 1 row affected (0.15 sec)
+
+mysql> select * from Addressbook;
++-----------+----------+----------+-----------+------------+----------+-------------+-----------------------+
+| firstname | lastname | address  | city      | state      | zip      | phonenumber | email                 |
++-----------+----------+----------+-----------+------------+----------+-------------+-----------------------+
+| mujawar   | nilo     | srnagar  | nandre    | maharashtra|   500038 |  9177530369 | nilofarm@gmail.com    |
+| chow      | anurag   | lonavala | pune      | maharashtra|  5043438 | 91763456439 | manurag@gmail.com     |
+| mall      | anupama  | abcd     | bangalore | karnataka  | 50443438 | 91763646439 | manupama@gmail.com    |
++-----------+----------+----------+-----------+------------+----------+-------------+-----------------------+
+3 rows in set (0.02 sec)
+-------------------------------------------------------------------------------------------------------
