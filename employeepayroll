@@ -75,3 +75,20 @@ mysql> select * from employee_payroll;
 |  4 | Anupama    | 100000 | 2021-08-17 |
 +----+------------+--------+------------+
 4 rows in set (0.00 sec)
+//-----------UC5---------------
+mysql> select * from employee_payroll where salary > 40000;
++----+---------+--------+------------+
+| id | name    | salary | startDate  |
++----+---------+--------+------------+
+|  4 | Anupama | 100000 | 2021-08-17 |
++----+---------+--------+------------+
+1 row in set (0.00 sec)
+
+mysql> select * from employee_payroll where startDate between '2021-06-17' AND Date(now());
++----+---------+--------+------------+
+| id | name    | salary | startDate  |
++----+---------+--------+------------+
+|  3 | Anurag  |  20000 | 2021-06-28 |
+|  4 | Anupama | 100000 | 2021-08-17 |
++----+---------+--------+------------+
+2 rows in set (0.00 sec)
