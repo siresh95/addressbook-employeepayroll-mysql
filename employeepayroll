@@ -63,3 +63,15 @@ Query OK, 1 row affected (0.13 sec)
 
 mysql> insert into employee_payroll(name,salary,startDate)values('Anupama',100000,'2021-08-17');
 Query OK, 1 row affected (0.16 sec)
+//-----------UC4---------------
+
+mysql> select * from employee_payroll;
++----+------------+--------+------------+
+| id | name       | salary | startDate  |
++----+------------+--------+------------+
+|  1 | Nilofar    |  40000 | 2021-02-10 |
+|  2 | Aishwarya  |  30000 | 2021-05-20 |
+|  3 | Anurag     |  20000 | 2021-06-28 |
+|  4 | Anupama    | 100000 | 2021-08-17 |
++----+------------+--------+------------+
+4 rows in set (0.00 sec)
