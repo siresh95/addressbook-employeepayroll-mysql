@@ -214,3 +214,11 @@ mysql> select * from Addressbook where contacttype='friend';
 +-----------+----------+---------+-----------+-----------+--------+-------------+-----------------------+------------+-------------+
 1 row in set (0.00 sec)
 --------------------------------------------------------------------------------------------------------
+//UC10 ability to get count of contacts by contacttype
+mysql> select count(firstname) from Addressbook where contacttype='friend';
++------------------+
+| count(firstname) |
++------------------+
+|                1 |
++------------------+
+1 row in set (0.00 sec)
