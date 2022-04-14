@@ -112,3 +112,12 @@ mysql> select * from employee_payroll;
 |  4 | Anupama    | 100000 | 2021-08-17 | F      |
 +----+------------+--------+------------+--------+
 4 rows in set (0.00 sec)
+//-----------UC7---------------
+
+mysql> select sum(salary) from employee_payroll where gender = 'F' group by gender;
++-------------+
+| sum(salary) |
++-------------+
+|      170000 |
++-------------+
+1 row in set (0.00 sec)
